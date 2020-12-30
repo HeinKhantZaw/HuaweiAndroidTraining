@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
         // You can see this in application
         Toast toast  = Toast.makeText(MainActivity.this, "Activity_A :onCreate() method is called.", Toast.LENGTH_SHORT);
+        toast.setGravity(Gravity.LEFT, -100, -480);
         toast.show();
 
         //setOnClickListener for button => (Which means what will happen when this button is clicked)
@@ -46,6 +47,16 @@ public class MainActivity extends AppCompatActivity {
         super.onStart();
         Log.i(TAG, "onStart() method is called.");
         Toast toast  = Toast.makeText(MainActivity.this, "Activity_A :onStart() method is called.", Toast.LENGTH_SHORT);
+        toast.setGravity(Gravity.LEFT, -100, -280);
+        toast.show();
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Log.i(TAG, "onRestart() method is called.");
+        Toast toast  = Toast.makeText(MainActivity.this, "Activity_A :onRestart() method is called.", Toast.LENGTH_SHORT);
+        toast.setGravity(Gravity.LEFT, -100, -80);
         toast.show();
     }
 
@@ -55,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
         super.onResume();
         Log.i(TAG, "onResume() method is called.");
         Toast toast  = Toast.makeText(MainActivity.this, "Activity_A :onResume() method is called.", Toast.LENGTH_SHORT);
+        toast.setGravity(Gravity.LEFT, -100, 120);
         toast.show();
     }
 
@@ -64,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
         super.onPause();
         Log.i(TAG, "onPause() method is called.");
         Toast toast  = Toast.makeText(MainActivity.this, "Activity_A :onPause() method is called.", Toast.LENGTH_SHORT);
+        toast.setGravity(Gravity.LEFT, -100, 320);
         toast.show();
     }
 
@@ -73,6 +86,7 @@ public class MainActivity extends AppCompatActivity {
         super.onStop();
         Log.i(TAG, "onStop() method is called.");
         Toast toast  = Toast.makeText(MainActivity.this, "Activity_A :onStop() method is called.", Toast.LENGTH_SHORT);
+        toast.setGravity(Gravity.LEFT, -100, 520);
         toast.show();
     }
 
@@ -81,17 +95,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         Log.i(TAG, "onDestroy() method is called.");
-        Toast toast  = Toast.makeText(MainActivity.this, "Activity_A :onDestroy() method is called.", Toast.LENGTH_SHORT);
-        toast.show();
-    }
-
-
-    @Override
-    protected void onRestart() {
-        super.onRestart();
-        Log.i(TAG, "onRestart() method is called.");
-        Toast toast  = Toast.makeText(MainActivity.this, "Activity_A :onRestart() method is called.", Toast.LENGTH_SHORT);
-        toast.show();
+       //Can't toast because main activity is destroyed
     }
 
 }
