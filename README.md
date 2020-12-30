@@ -1,7 +1,7 @@
 # HuaweiAndroidTraining
 Codes from Huawei Android Training
 
-# To run the project
+## Getting Started
 
 1. Clone this repo or Download as zip file.
 2. Open Android Studio > File > Open.
