@@ -9,7 +9,7 @@ Codes from Huawei Android Training
 2. Open Android Studio > File > Open  <br/>
 ![Android studio](https://user-images.githubusercontent.com/40730345/103393760-dfdaec00-4b52-11eb-9835-a1e112acb236.png)
 
-3. Choose a project from the folder (Currently there's only Day1 folder).
+3. Choose a project from the folder (Currently there's only Day1 folder). <br/>
 ![Choosing project](https://user-images.githubusercontent.com/40730345/103393754-d18cd000-4b52-11eb-912e-01ba215c2ff6.png)
 
 5. Run the project!
