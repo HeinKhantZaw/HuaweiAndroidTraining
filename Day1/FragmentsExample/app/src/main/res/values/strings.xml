@@ -1,10 +1,5 @@
 <resources>
     <string name="app_name">FragmentsExample</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="fragment_a">Fragment_A</string>
-    <string name="fragment_b">fragment_B</string>
-    <string name="enter_something">Enter something</string>
-    <string name="go_to_fragment_b">Go to Fragment B</string>
-    <string name="go_to_fragment_a">Go to Fragment A</string>
+    <string name="fragment_a_text">Plz check logs to know more about fragment lifecycle</string>
 </resources>

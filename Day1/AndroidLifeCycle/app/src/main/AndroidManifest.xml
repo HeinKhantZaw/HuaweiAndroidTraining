@@ -10,7 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".ActivityB"></activity>
+        <activity android:name=".ActivityB">
+        </activity>
 
         <activity android:name=".MainActivity">
             <intent-filter>
