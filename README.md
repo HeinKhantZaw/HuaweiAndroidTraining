@@ -14,3 +14,10 @@ Codes from Huawei Android Training
 
 5. Run the project!
 
+## Details about each project
+There's a README.md in every project. If you're interested, you can find more about the project in those README.md! 
+
+### Day 1
+- [AndroidLifeCycleExample](https://github.com/HeinKhantZaw/HuaweiAndroidTraining/tree/main/Day1/AndroidLifeCycle)
+- [ContentProviderExample](https://github.com/HeinKhantZaw/HuaweiAndroidTraining/tree/main/Day1/ContentProviderExample)
+- [FragmentsExample](https://github.com/HeinKhantZaw/HuaweiAndroidTraining/tree/main/Day1/FragmentsExample)
