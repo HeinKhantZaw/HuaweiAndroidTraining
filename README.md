@@ -24,7 +24,7 @@ As I'll be adding more example projects after future sessions, you can ```git pu
 But I recommend to use git because you don't need to download again and again every time I upload new code.
 You can learn more about git [here](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)!
 
-Here is the command of pulling the updated project.
+Here is the command of pulling the updated project. <br/>
 ![git pull](https://user-images.githubusercontent.com/40730345/103451278-5eb95b80-4cf0-11eb-8038-2358f0293d5d.png)
 <br>
 This command pull the updated files and folder from the repo in github to your local repo in your laptop.
