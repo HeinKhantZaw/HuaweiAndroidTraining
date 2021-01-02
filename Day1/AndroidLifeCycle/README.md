@@ -9,7 +9,7 @@ The android activity lifecycle includes the following callbacks: `onCreate()`, `
 
 onCreate()
 ----
-This activity must be in all activities in an android project. The activity lifecycle of an android app begins here. This is where any layout resources (Buttons, textViews, editText, etc.) and background threads are initialized. 
+The lifecycle of an android activity begins here. This is where any layout resources (Buttons, textViews, editText, etc.) and background threads are initialized. 
 
 onStart()
 ----
