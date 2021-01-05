@@ -11,8 +11,8 @@
         android:theme="@style/AppTheme">
         <activity android:name=".RelativeLayoutActivity"></activity>
         <activity android:name=".LinearLayoutVerticalActivity" />
-        <activity android:name=".LinearLayoutHorizonalActivity" />
-        <activity android:name=".ContraintLayoutActivity">
+        <activity android:name=".LinearLayoutHorizontalActivity" />
+        <activity android:name=".ConstraintLayoutActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
