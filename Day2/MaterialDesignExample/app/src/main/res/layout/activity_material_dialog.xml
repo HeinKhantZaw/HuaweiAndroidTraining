@@ -12,15 +12,14 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp"
         android:layout_marginEnd="32dp"
         android:background="@color/colorPrimary"
         android:text="Alert Dialog"
-        android:textColor="#FFF"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnSimpleDialog"
@@ -32,7 +31,7 @@
         android:layout_marginEnd="32dp"
         android:background="@color/colorPrimary"
         android:text="Simple Dialog"
-        android:textColor="#FFF"
+        android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnAlertDialog" />
@@ -47,7 +46,7 @@
         android:layout_marginEnd="64dp"
         android:background="@color/colorPrimary"
         android:text="Confirmation Dialog"
-        android:textColor="#FFF"
+        android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnSimpleDialog" />

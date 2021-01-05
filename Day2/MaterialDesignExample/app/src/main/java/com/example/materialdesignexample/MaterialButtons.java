@@ -1,8 +1,12 @@
-package com.example.activityexample;
+package com.example.materialdesignexample;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 public class MaterialButtons extends AppCompatActivity {
 
