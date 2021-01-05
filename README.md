@@ -13,7 +13,7 @@ Codes from Huawei Android Training
 2. #### Open Android Studio > File > Open  <br/>
 ![Android studio](https://user-images.githubusercontent.com/40730345/103393760-dfdaec00-4b52-11eb-9835-a1e112acb236.png)
 
-3. #### Choose a project from the folder (Currently there's only Day1 folder). <br/>
+3. #### Choose a project from the folder. <br/>
 ![Choosing project](https://user-images.githubusercontent.com/40730345/103393754-d18cd000-4b52-11eb-912e-01ba215c2ff6.png)
 
 5. #### Run the project!
@@ -37,3 +37,9 @@ There's a README.md in every project. If you're interested, you can find more ab
 - [AndroidLifeCycleExample](https://github.com/HeinKhantZaw/HuaweiAndroidTraining/tree/main/Day1/AndroidLifeCycle)
 - [ContentProviderExample](https://github.com/HeinKhantZaw/HuaweiAndroidTraining/tree/main/Day1/ContentProviderExample)
 - [FragmentsExample](https://github.com/HeinKhantZaw/HuaweiAndroidTraining/tree/main/Day1/FragmentsExample)
+
+### Day 2
+- [Layout Example](https://github.com/HeinKhantZaw/HuaweiAndroidTraining/tree/main/Day2/LayoutExamples)
+- [MaterialDesign Example](https://github.com/HeinKhantZaw/HuaweiAndroidTraining/tree/main/Day2/MaterialDesignExample)
+- [RecyclerView Example](https://github.com/HeinKhantZaw/HuaweiAndroidTraining/tree/main/Day2/RecyclerViewExample)
+- [SplashScreen Example](https://github.com/HeinKhantZaw/HuaweiAndroidTraining/tree/main/Day2/SplashScreenExample)
