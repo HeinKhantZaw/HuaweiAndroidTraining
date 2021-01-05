@@ -8,7 +8,7 @@
 
     <Button
         android:id="@+id/btnAlertDialog"
-        style="@style/Widget.AppCompat.Button"
+        style="@style/Widget.MaterialComponents.Button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -23,7 +23,7 @@
 
     <Button
         android:id="@+id/btnSimpleDialog"
-        style="@style/Widget.AppCompat.Button"
+        style="@style/Widget.MaterialComponents.Button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -38,7 +38,7 @@
 
     <Button
         android:id="@+id/btnConfirmation"
-        style="@style/Widget.AppCompat.Button"
+        style="@style/Widget.MaterialComponents.Button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"

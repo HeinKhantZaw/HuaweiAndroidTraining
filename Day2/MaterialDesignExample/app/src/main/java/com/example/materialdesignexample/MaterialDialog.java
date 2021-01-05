@@ -48,8 +48,7 @@ public class MaterialDialog extends AppCompatActivity implements View.OnClickLis
                             public void onClick(DialogInterface dialogInterface, int i) {
                                 Toast.makeText(MaterialDialog.this, "Cancel Button clicked", Toast.LENGTH_SHORT).show();
                             }
-                        })
-                        .show();
+                        }).show();
                 break;
             case R.id.btnSimpleDialog:
                 new MaterialAlertDialogBuilder(MaterialDialog.this)
@@ -66,16 +65,16 @@ public class MaterialDialog extends AppCompatActivity implements View.OnClickLis
             case R.id.btnConfirmation:
                     new  MaterialAlertDialogBuilder(MaterialDialog.this)
                             .setTitle("Are you sure?")
-                            .setNeutralButton("Ok", new DialogInterface.OnClickListener() {
+                            .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialogInterface, int i) {
-                                    Toast.makeText(MaterialDialog.this, "OK Button clicked", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(MaterialDialog.this, "Yes Button clicked", Toast.LENGTH_SHORT).show();
                                 }
                             })
-                            .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                            .setNegativeButton("No", new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialogInterface, int i) {
-                                    Toast.makeText(MaterialDialog.this, "Cancel Button clicked", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(MaterialDialog.this, "No Button clicked", Toast.LENGTH_SHORT).show();
                                 }
                             })
                             .setMessage("You can add confirmation message here!")
