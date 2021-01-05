@@ -10,20 +10,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd2fcdc4-279b-479a-a2f1-d8955c341729" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../MaterialDesignExample/app/src/main/res/drawable/ic_android.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MaterialDesignExample/app/src/main/res/drawable/ic_baseline_add_alert_24.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MaterialDesignExample/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../MaterialDesignExample/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MaterialDesignExample/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MaterialDesignExample/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MaterialDesignExample/app/src/main/java/com/example/activityexample/MainActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MaterialDesignExample/app/src/main/java/com/example/activityexample/MaterialButtons.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MaterialDesignExample/app/src/main/java/com/example/materialdesignexample/MaterialButtons.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MaterialDesignExample/app/src/main/java/com/example/activityexample/MaterialDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MaterialDesignExample/app/src/main/java/com/example/materialdesignexample/MaterialDialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MaterialDesignExample/app/src/main/java/com/example/materialdesignexample/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MaterialDesignExample/app/src/main/java/com/example/materialdesignexample/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MaterialDesignExample/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MaterialDesignExample/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MaterialDesignExample/app/src/main/res/layout/activity_material_buttons.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MaterialDesignExample/app/src/main/res/layout/activity_material_buttons.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MaterialDesignExample/app/src/main/res/layout/activity_material_dialog.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MaterialDesignExample/app/src/main/res/layout/activity_material_dialog.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="bd2fcdc4-279b-479a-a2f1-d8955c341729" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
