@@ -1,5 +1,0 @@
-<resources>
-    <string name="app_name">startServiceExample</string>
-    <string name="stop_service">Stop Service</string>
-    <string name="start_service">Start Service</string>
-</resources>

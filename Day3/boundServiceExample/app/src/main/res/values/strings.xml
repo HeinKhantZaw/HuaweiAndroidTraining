@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">boundServiceExample</string>
+    <string name="show_current_date">Show current date</string>
+</resources>
