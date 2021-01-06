@@ -11,14 +11,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd2fcdc4-279b-479a-a2f1-d8955c341729" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../RecyclerViewExample/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RecyclerViewExample/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RecyclerViewExample/app/src/main/java/com/example/recyclerviewexample/CustomAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RecyclerViewExample/app/src/main/java/com/example/recyclerviewexample/CustomAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RecyclerViewExample/app/src/main/java/com/example/recyclerviewexample/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RecyclerViewExample/app/src/main/java/com/example/recyclerviewexample/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RecyclerViewExample/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RecyclerViewExample/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RecyclerViewExample/app/src/main/res/layout/list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RecyclerViewExample/app/src/main/res/layout/list.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day3/foregroundServiceExample/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day3/foregroundServiceExample/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day3/foregroundServiceExample/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day3/foregroundServiceExample/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day3/foregroundServiceExample/app/src/androidTest/java/com/example/foregroundserviceexample/ExampleInstrumentedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day3/foregroundServiceExample/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day3/foregroundServiceExample/app/src/main/java/com/example/foregroundserviceexample/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day3/foregroundServiceExample/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day3/foregroundServiceExample/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day3/foregroundServiceExample/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day3/foregroundServiceExample/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day3/foregroundServiceExample/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day3/foregroundServiceExample/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day3/foregroundServiceExample/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day3/foregroundServiceExample/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day3/foregroundServiceExample/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day3/foregroundServiceExample/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day3/foregroundServiceExample/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day3/foregroundServiceExample/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day3/foregroundServiceExample/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day3/foregroundServiceExample/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day3/foregroundServiceExample/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day3/foregroundServiceExample/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day3/foregroundServiceExample/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day3/foregroundServiceExample/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day3/foregroundServiceExample/app/src/test/java/com/example/foregroundserviceexample/ExampleUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day3/foregroundServiceExample/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day3/foregroundServiceExample/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day3/foregroundServiceExample/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day3/foregroundServiceExample/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day3/foregroundServiceExample/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day3/foregroundServiceExample/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day3/foregroundServiceExample/settings.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/splashscreenexample/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/splashscreenexample/MainActivity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,10 +173,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="263" y="119" key="AndroidCreateResourceDirectoryDialog" timestamp="1609837513111">
+    <state x="263" y="119" key="AndroidCreateResourceDirectoryDialog" timestamp="1609934962548">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="263" y="119" key="AndroidCreateResourceDirectoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1609837513111" />
+    <state x="263" y="119" key="AndroidCreateResourceDirectoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1609934962548" />
     <state x="262" y="0" key="CommitChangelistDialog2" timestamp="1609839972692">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
