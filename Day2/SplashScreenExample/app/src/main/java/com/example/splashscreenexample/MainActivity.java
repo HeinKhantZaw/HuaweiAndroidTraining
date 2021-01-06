@@ -26,11 +26,11 @@ public class MainActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(MainActivity.this,HomeActivity.class);
+                Intent intent = new Intent(MainActivity.this, HomeActivity.class);
                 startActivity(intent);
                 finish();
             }
-        },SPLASH_SCREEN_TIME);
+        }, SPLASH_SCREEN_TIME);
     }
 
     private void loadAnim() {

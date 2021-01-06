@@ -10,7 +10,16 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd2fcdc4-279b-479a-a2f1-d8955c341729" name="Default Changelist" comment="" />
+    <list default="true" id="bd2fcdc4-279b-479a-a2f1-d8955c341729" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../RecyclerViewExample/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RecyclerViewExample/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecyclerViewExample/app/src/main/java/com/example/recyclerviewexample/CustomAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RecyclerViewExample/app/src/main/java/com/example/recyclerviewexample/CustomAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecyclerViewExample/app/src/main/java/com/example/recyclerviewexample/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RecyclerViewExample/app/src/main/java/com/example/recyclerviewexample/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecyclerViewExample/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RecyclerViewExample/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecyclerViewExample/app/src/main/res/layout/list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RecyclerViewExample/app/src/main/res/layout/list.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/splashscreenexample/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/splashscreenexample/MainActivity.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

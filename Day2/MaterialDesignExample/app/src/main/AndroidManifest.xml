@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar">
-        <activity android:name="com.example.materialdesignexample.MaterialDialog"/>
+        <activity android:name="com.example.materialdesignexample.MaterialDialog" />
         <activity android:name="com.example.materialdesignexample.MaterialButtons" />
         <activity android:name="com.example.materialdesignexample.MainActivity">
             <intent-filter>

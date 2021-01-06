@@ -7,8 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     Button btnButton, btnDialog;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,13 +26,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()){
+        switch (view.getId()) {
             case R.id.btnButton:
-                Intent intent = new Intent(MainActivity.this,MaterialButtons.class);
+                Intent intent = new Intent(MainActivity.this, MaterialButtons.class);
                 startActivity(intent);
                 break;
             case R.id.btnDialogs:
-                Intent intent1 = new Intent(MainActivity.this,MaterialDialog.class);
+                Intent intent1 = new Intent(MainActivity.this, MaterialDialog.class);
                 startActivity(intent1);
                 break;
         }

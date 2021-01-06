@@ -36,7 +36,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
      * Initialize the dataset of the Adapter.
      *
      * @param dataSet String[] containing the data to populate views to be used
-     * by RecyclerView.
+     *                by RecyclerView.
      */
     public CustomAdapter(ItemList[] dataSet) {
         localDataSet = dataSet;
@@ -64,7 +64,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
         viewHolder.linearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(view.getContext(),list.getText()+" clicked",Toast.LENGTH_SHORT).show();
+                Toast.makeText(view.getContext(), list.getText() + " clicked", Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -75,4 +75,3 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
         return localDataSet.length;
     }
 }
-
