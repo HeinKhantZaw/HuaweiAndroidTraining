@@ -9,8 +9,8 @@ Layout is used to define the user interface for an app or activity and it will h
 
 ![view_and_viewGroup](https://developer.android.com/images/viewgroup_2x.png)
 
-##### Examples of ViewGroup - LinearLayout, RelativeLayout, ConstraintLayout, etc.
-##### Examples of View - TextView, EditText, Button, etc.
+- Examples of ViewGroup - LinearLayout, RelativeLayout, ConstraintLayout, etc.
+- Examples of View - TextView, EditText, Button, etc.
 
 ViewGroup Types
 ---
