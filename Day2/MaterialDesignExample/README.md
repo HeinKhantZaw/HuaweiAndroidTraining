@@ -2,6 +2,7 @@
 An android app demo that showcases the material design components such as buttons and dialog box. There are three activities, `MainActivity.java`, `MaterialButtons.java` and `MaterialDialog.java`. 
 
 ## Introduction:
+Material is a design system – backed by open-source code – that helps teams build high-quality digital experiences. 
 This app includes the following callbacks: `onCreate()`, `onClick()` and some methods of AlertDialogBuilder, [`setTitle()`, `show()`, `setIcon()`, `setMessage()`, `setNeutralButton()`, `setNegativeButton()`, `setPositiveButton()` and `setItems()`].
 
 First of all, you have to add material design library into "build.gradle(:app)" file. </br>
@@ -51,4 +52,4 @@ If you click the "Material Buttons" button, you will see 4 material design butto
 
 If you click the "Material Dialogs" button, you will see another 3 buttons which will display the dialog boxes. After you choose and click some buttons from those dialog boxes, the toasts will display what you chose.
 
-You can learn more about material design [here](https://material.io/components)!
+You can learn more about material design [here](https://material.io/)!
