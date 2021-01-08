@@ -52,3 +52,15 @@ A view group that enables views to inherit the attributes of the underlying view
 
 ![Coordinator Layout](https://miro.medium.com/max/758/1*fVKOTpH7S2ZlGrpmLcuyZQ.gif)
 
+### List View
+ListView is a view group that displays a list of scrollable items. <br/>
+![list view from tutorialspoint](https://www.tutorialspoint.com/android/images/list.jpg)
+
+### Grid View 
+GridView is a ViewGroup that displays items in a two-dimensional, scrollable grid. <br/>
+![grid view](https://lh3.googleusercontent.com/proxy/37uxE9NfeqQE2qmqV84Uxof4ohmom1L0y0x8D946uUa4RPRlJy9-Z3yPU2G3izxaOjwhMQATABMgV3ZSvZH33jbsR6lHd8JWT0zP78M)
+
+### Adapter View
+AdapterView is ViewGroup that displays items loaded into a adapter. It is a bridge between UI component and data source that helps us to fill data in UI component. It holds the data and send the data to an Adapter view then view can takes the data from the adapter view and shows the data on different views like as ListView, GridView, etc.
+
+
