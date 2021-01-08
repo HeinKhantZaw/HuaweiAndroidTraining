@@ -53,3 +53,7 @@ There's a README.md in every project. If you're interested, you can find more ab
 ### Day 4
 - [BroadcastReceiver Example](https://github.com/HeinKhantZaw/HuaweiAndroidTraining/tree/main/Day4/broadcastReceiverExample)
 - [Notification Example](https://github.com/HeinKhantZaw/HuaweiAndroidTraining/tree/main/Day4/notificationExample)
+
+### Day 5 
+- [Bitmap Example](https://github.com/HeinKhantZaw/HuaweiAndroidTraining/tree/main/Day5/bitmapExample)
+- [Paint Example](https://github.com/HeinKhantZaw/HuaweiAndroidTraining/tree/main/Day5/paintExample)
