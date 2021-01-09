@@ -17,7 +17,8 @@ There are three different types of services:
 A foreground service performs some operation that is noticeable to the user. For example, an audio app would use a foreground service to play an audio track.
 Foreground services must display a Notification. Foreground services continue running even when the user isn't interacting with the app.
 When you use a foreground service, you must display a notification so that users are actively aware that the service is running. 
-This notification cannot be dismissed unless the service is either stopped or removed from the foreground.
+This notification cannot be dismissed unless the service is either stopped or removed from the foreground. As for another example, a fitness app can uses a foreground service to record a user's running activity, after receiving permission from the user.
+The notification might show the distance that the user has traveled after running.
 </p>
 
 <h3> 2. Background Service </h3>
@@ -31,8 +32,9 @@ For example, if an app used a service to compact its storage, that would usually
 A service is bound when an application component binds to it by calling bindService(). 
 A bound service offers a client-server interface that allows components to interact with the service, send requests, receive results, and 
 even do so across processes with interprocess communication (IPC). A bound service runs only as long as another application component is bound to it. 
-Multiple components can bind to the service at once, but when all of them unbind, the service is destroyed. 
-</p>
+Multiple components can bind to the service at once, but when all of them unbind, the service is destroyed. For example, an audio player might find it useful to allow its service to run indefinitely and also provide binding. This way, an activity can start the service to play some music and the music continues to play even if the user leaves the application. Then, when the user returns to the application, the activity can bind to the service to regain control of playback.</p> 
+
+Go to [additional notes](https://github.com/HeinKhantZaw/HuaweiAndroidTraining/tree/main/Day3/startServiceExample#additional-notes) for further explanation.
 
 Service Lifecycle
 ---
