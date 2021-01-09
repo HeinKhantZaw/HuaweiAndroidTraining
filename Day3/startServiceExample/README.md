@@ -31,7 +31,7 @@ For example, if an app used a service to compact its storage, that would usually
 A service is bound when an application component binds to it by calling bindService(). 
 A bound service offers a client-server interface that allows components to interact with the service, send requests, receive results, and 
 even do so across processes with interprocess communication (IPC). A bound service runs only as long as another application component is bound to it. 
-Multiple components can bind to the service at once, but when all of them unbind, the service is destroyed.
+Multiple components can bind to the service at once, but when all of them unbind, the service is destroyed. 
 </p>
 
 Service Lifecycle
@@ -146,3 +146,7 @@ onDestroy()
 ---
 Called by the system to notify a Service that it is no longer used and is being removed. The service should clean up any resources it holds (threads, registered receivers, etc) at this point.
 Upon return, there will be no more calls in to this Service object and it is effectively dead. Do not call this method directly.
+
+Additional notes
+---
+Although there are started and bound services separately, service can work both ways — it can be started (to run indefinitely) and also allow binding. It's simply a matter of whether you implement a couple of callback methods: onStartCommand() to allow components to start it and onBind() to allow binding. 
