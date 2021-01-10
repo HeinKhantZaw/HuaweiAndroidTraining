@@ -98,24 +98,28 @@ public class MyService extends Service {
             builder.setPriority(Notification.PRIORITY_MAX);
             builder.setFullScreenIntent(pendingIntent, true);
 
-            //Add play button
-            Intent playIntent = new Intent(this, MyService.class);
-            playIntent.setAction(ACTION_PLAY);
-            PendingIntent pendingPlayIntent = PendingIntent.getService(this, 0, playIntent, PendingIntent.FLAG_UPDATE_CURRENT);
-            NotificationCompat.Action playAction = new NotificationCompat.Action(android.R.drawable.ic_media_play, "Play", pendingPlayIntent);
-            builder.addAction(playAction);
-
-            //Add pause button
-            Intent pauseIntent = new Intent(this, MyService.class);
-            pauseIntent.setAction(ACTION_STOP);
-            PendingIntent pendingPauseIntent = PendingIntent.getService(this, 0, pauseIntent, PendingIntent.FLAG_UPDATE_CURRENT);
-            NotificationCompat.Action pauseAction = new NotificationCompat.Action(android.R.drawable.ic_media_pause, "Pause", pendingPauseIntent);
-            builder.addAction(pauseAction);
+            addButtonToNoti(builder);
 
             //build notification
             Notification notification = builder.build();
             startForeground(1, notification);
         }
+    }
+
+    private void addButtonToNoti(NotificationCompat.Builder builder) {
+        //Add play button
+        Intent playIntent = new Intent(this, MyService.class);
+        playIntent.setAction(ACTION_PLAY);
+        PendingIntent pendingPlayIntent = PendingIntent.getService(this, 0, playIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+        NotificationCompat.Action playAction = new NotificationCompat.Action(android.R.drawable.ic_media_play, "Play", pendingPlayIntent);
+        builder.addAction(playAction);
+
+        //Add pause button
+        Intent pauseIntent = new Intent(this, MyService.class);
+        pauseIntent.setAction(ACTION_STOP);
+        PendingIntent pendingPauseIntent = PendingIntent.getService(this, 0, pauseIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+        NotificationCompat.Action pauseAction = new NotificationCompat.Action(android.R.drawable.ic_media_pause, "Pause", pendingPauseIntent);
+        builder.addAction(pauseAction);
     }
 
     @RequiresApi(api = Build.VERSION_CODES.O)
@@ -138,19 +142,7 @@ public class MyService extends Service {
         bigTextStyle.bigText("A foreground service performs some operation that is noticeable to the user. For example, an audio app would use a foreground service to play an audio track.");
         builder.setStyle(bigTextStyle);
 
-        //Add play button
-        Intent playIntent = new Intent(this, MyService.class);
-        playIntent.setAction(ACTION_PLAY);
-        PendingIntent pendingPlayIntent = PendingIntent.getService(this, 0, playIntent, PendingIntent.FLAG_UPDATE_CURRENT);
-        NotificationCompat.Action playAction = new NotificationCompat.Action(android.R.drawable.ic_media_play, "Play", pendingPlayIntent);
-        builder.addAction(playAction);
-
-        //Add pause button
-        Intent pauseIntent = new Intent(this, MyService.class);
-        pauseIntent.setAction(ACTION_STOP);
-        PendingIntent pendingPauseIntent = PendingIntent.getService(this, 0, pauseIntent, PendingIntent.FLAG_UPDATE_CURRENT);
-        NotificationCompat.Action pauseAction = new NotificationCompat.Action(android.R.drawable.ic_media_pause, "Pause", pendingPauseIntent);
-        builder.addAction(pauseAction);
+        addButtonToNoti(builder);
 
         Notification notification = builder.setOngoing(true)
                 .setSmallIcon(R.drawable.ic_launcher_background)
@@ -168,5 +160,6 @@ public class MyService extends Service {
     private void stopForegroundService() {
         Log.d(TAG_FOREGROUND_SERVICE, "Stop foreground service.");
         stopForeground(true);
+        mediaPlayer.stop(); // stop playing music
     }
 }
