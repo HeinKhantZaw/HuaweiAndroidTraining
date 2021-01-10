@@ -1,7 +1,5 @@
 package com.example.notificationexample;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.AlarmManager;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -13,6 +11,8 @@ import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Calendar;
 
@@ -58,20 +58,20 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void setAlarm(View view){
+    public void setAlarm(View view) {
         int NotifID = 1;
         AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
         Calendar calendar = Calendar.getInstance();
-        calendar.set(Calendar.MINUTE,calendar.get(Calendar.MINUTE));
-        calendar.set(Calendar.SECOND,0);
+        calendar.set(Calendar.MINUTE, calendar.get(Calendar.MINUTE));
+        calendar.set(Calendar.SECOND, 0);
 
         //PendingIntent to launch receiver when the alarm triggers
         Intent notificationIntent = new Intent(MainActivity.ACTION);
         notificationIntent.setPackage("com.example.notificationexample");
-        notificationIntent.putExtra("NotifID",NotifID);
+        notificationIntent.putExtra("NotifID", NotifID);
 
-        PendingIntent pendingIntent = PendingIntent.getBroadcast(MainActivity.this,NotifID,notificationIntent,0);
-        alarmManager.set(AlarmManager.RTC_WAKEUP,calendar.getTimeInMillis(),pendingIntent);
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(MainActivity.this, NotifID, notificationIntent, 0);
+        alarmManager.set(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), pendingIntent);
         finish();
     }
 }
