@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         btnDisplayDate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(isBound){
+                if (isBound) {
                     Date date = service.getDate();
                     tvDisplay.setText(date.toString());
                 }
@@ -55,13 +55,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         Intent intent = new Intent(MainActivity.this, MyService.class);
-        bindService(intent, connection,BIND_AUTO_CREATE);
+        bindService(intent, connection, BIND_AUTO_CREATE);
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        if(isBound) {
+        if (isBound) {
             unbindService(connection);
             isBound = false;
         }
