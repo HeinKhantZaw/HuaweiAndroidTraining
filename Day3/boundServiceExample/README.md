@@ -14,6 +14,9 @@ part of the same app process.
 * Remote binding - the service and the component that wants to bind to
 that particular service are in two different processes.
 
+![Two Types](https://user-images.githubusercontent.com/40730345/104118701-3f0ddd00-5359-11eb-8dbb-2f5189a09a8f.JPG)
+
+
 Creating a BoundService
 ---
 <h3>MyService</h3>
