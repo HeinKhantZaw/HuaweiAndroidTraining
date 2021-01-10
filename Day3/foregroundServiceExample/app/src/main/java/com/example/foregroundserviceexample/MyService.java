@@ -11,8 +11,10 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
+import android.media.MediaPlayer;
 import android.os.Build;
 import android.os.IBinder;
+import android.provider.Settings;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -24,8 +26,9 @@ public class MyService extends Service {
     public static final String TAG_FOREGROUND_SERVICE = "FOREGROUND_SERVICE";
     public static final String ACTION_START_FOREGROUND_SERVICE = "ACTION_START_FOREGROUND_SERVICE";
     public static final String ACTION_STOP_FOREGROUND_SERVICE = "ACTION_STOP_FOREGROUND_SERVICE";
-    public static final String ACTION_PAUSE = "ACTION_PAUSE";
+    public static final String ACTION_STOP = "ACTION_STOP";
     public static final String ACTION_PLAY = "ACTION_PLAY";
+    MediaPlayer mediaPlayer;
 
     public MyService() {
     }
@@ -60,6 +63,14 @@ public class MyService extends Service {
                                 "Foreground service is stopped",
                                 Toast.LENGTH_SHORT).show();
                         break;
+                    case ACTION_PLAY:
+                        mediaPlayer = MediaPlayer.create(this, Settings.System.DEFAULT_RINGTONE_URI);
+                        mediaPlayer.setLooping(true);
+                        mediaPlayer.start();
+                        break;
+                    case ACTION_STOP:
+                        mediaPlayer.stop();
+                        break;
                 }
             }
         }
@@ -74,9 +85,11 @@ public class MyService extends Service {
             Intent intent = new Intent();
             PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, Intent.FILL_IN_ACTION);
             NotificationCompat.Builder builder = new NotificationCompat.Builder(this, "my_service");
+
             NotificationCompat.BigTextStyle bigTextStyle = new NotificationCompat.BigTextStyle();
             bigTextStyle.setBigContentTitle("Music player is implemented by foreground service.");
             bigTextStyle.bigText("A foreground service performs some operation that is noticeable to the user. For example, an audio app would use a foreground service to play an audio track.");
+
             builder.setStyle(bigTextStyle);
             builder.setWhen(System.currentTimeMillis());
             builder.setSmallIcon(R.mipmap.ic_launcher);
@@ -94,7 +107,7 @@ public class MyService extends Service {
 
             //Add pause button
             Intent pauseIntent = new Intent(this, MyService.class);
-            pauseIntent.setAction(ACTION_PAUSE);
+            pauseIntent.setAction(ACTION_STOP);
             PendingIntent pendingPauseIntent = PendingIntent.getService(this, 0, pauseIntent, PendingIntent.FLAG_UPDATE_CURRENT);
             NotificationCompat.Action pauseAction = new NotificationCompat.Action(android.R.drawable.ic_media_pause, "Pause", pendingPauseIntent);
             builder.addAction(pauseAction);
@@ -110,14 +123,35 @@ public class MyService extends Service {
         Intent resultIntent = new Intent(this, MainActivity.class);
         TaskStackBuilder stackBuilder = TaskStackBuilder.create(this);
         stackBuilder.addNextIntentWithParentStack(resultIntent);
+
         PendingIntent pendingIntent = stackBuilder.getPendingIntent(0, PendingIntent.FLAG_UPDATE_CURRENT);
         NotificationChannel channel = new NotificationChannel(channelId, channelName, NotificationManager.IMPORTANCE_HIGH);
         channel.setLightColor(Color.BLUE);
         channel.setLockscreenVisibility(Notification.VISIBILITY_PRIVATE);
+
         NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         manager.createNotificationChannel(channel);
-
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this, channelId);
+        NotificationCompat.BigTextStyle bigTextStyle = new NotificationCompat.BigTextStyle();
+        
+        bigTextStyle.setBigContentTitle("Music player is implemented by foreground service.");
+        bigTextStyle.bigText("A foreground service performs some operation that is noticeable to the user. For example, an audio app would use a foreground service to play an audio track.");
+        builder.setStyle(bigTextStyle);
+
+        //Add play button
+        Intent playIntent = new Intent(this, MyService.class);
+        playIntent.setAction(ACTION_PLAY);
+        PendingIntent pendingPlayIntent = PendingIntent.getService(this, 0, playIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+        NotificationCompat.Action playAction = new NotificationCompat.Action(android.R.drawable.ic_media_play, "Play", pendingPlayIntent);
+        builder.addAction(playAction);
+
+        //Add pause button
+        Intent pauseIntent = new Intent(this, MyService.class);
+        pauseIntent.setAction(ACTION_STOP);
+        PendingIntent pendingPauseIntent = PendingIntent.getService(this, 0, pauseIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+        NotificationCompat.Action pauseAction = new NotificationCompat.Action(android.R.drawable.ic_media_pause, "Pause", pendingPauseIntent);
+        builder.addAction(pauseAction);
+
         Notification notification = builder.setOngoing(true)
                 .setSmallIcon(R.drawable.ic_launcher_background)
                 .setContentTitle("App is running in background for testing")
