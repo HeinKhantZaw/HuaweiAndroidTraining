@@ -107,20 +107,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Matrix skewMatrix = new Matrix();
         skewMatrix.setSkew((float) xSkew, (float) ySkew, originalImageWidth / 2.0f, originalImageHeight / 2.0f);
         Paint paint = new Paint();
-        skewCanvas.drawBitmap(originalBitmap,skewMatrix,paint);
+        skewCanvas.drawBitmap(originalBitmap, skewMatrix, paint);
         img.setImageBitmap(skewBitmap);
     }
 
     private void doTranslate() {
-        Random random= new Random();
+        Random random = new Random();
         int xTranslate = random.nextInt(2000);
         int yTranslate = random.nextInt(2000);
-        Bitmap translateBitmap = Bitmap.createBitmap(originalImageWidth+xTranslate,originalImageHeight+yTranslate,originalImageConfig);
+        Bitmap translateBitmap = Bitmap.createBitmap(originalImageWidth + xTranslate, originalImageHeight + yTranslate, originalImageConfig);
         Canvas translateCanvas = new Canvas(translateBitmap);
         Matrix translateMatrix = new Matrix();
-        translateMatrix.setTranslate(xTranslate,yTranslate);
+        translateMatrix.setTranslate(xTranslate, yTranslate);
         Paint paint = new Paint();
-        translateCanvas.drawBitmap(originalBitmap,translateMatrix,paint);
+        translateCanvas.drawBitmap(originalBitmap, translateMatrix, paint);
         img.setImageBitmap(translateBitmap);
     }
 }
