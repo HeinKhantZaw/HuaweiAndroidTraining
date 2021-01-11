@@ -68,8 +68,9 @@ public class MainActivity extends AppCompatActivity {
             while (cursor.moveToNext()) {
                 String id = cursor.getString(0); // ContactsContract.Contacts._ID
                 String name = cursor.getString(1); // ContactsContract.Contacts.DISPLAY_NAME_PRIMARY
+                String hasPhoneNumber = cursor.getString(2); //ContactsContract.Contacts.HAS_PHONE_NUMBER
                 String phoneNumber = null;
-                if (Integer.parseInt(cursor.getString(2)) > 0) //ContactsContract.Contacts.HAS_PHONE_NUMBER
+                if (Integer.parseInt(hasPhoneNumber) > 0)
                 {
                     //This search the phone number according to Contact ID
                     //The query used to search phone number is ContactsContract.CommonDataKinds.Phone.CONTACT_ID + " = " + id (id is the string variable declared above)
@@ -82,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                     phones.close();
                 }
-                queryResults.append(name + " , " + phoneNumber + "\n");
+                queryResults.append(name + " , " + phoneNumber + " , " + hasPhoneNumber + "\n");
             }
             tvQueryResult.setText(queryResults.toString());
         } else {
