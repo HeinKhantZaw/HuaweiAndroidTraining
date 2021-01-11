@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ContentProviderDemo</string>
+    <string name="noContactStr">No contacts in device</string>
+</resources>

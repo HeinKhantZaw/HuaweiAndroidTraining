@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initView();
-        grantPermission();
+        checkPermission();
     }
 
     private void initView() {
@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         showToast("Event Added");
     }
 
-    private void grantPermission() {
+    private void checkPermission() {
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.READ_CALENDAR) != PackageManager.PERMISSION_GRANTED
                 && ActivityCompat.checkSelfPermission(this, Manifest.permission.WRITE_CALENDAR) != PackageManager.PERMISSION_GRANTED) {
             String[] strings = {
@@ -96,9 +96,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             };
             ActivityCompat.requestPermissions(this, strings, 1);
         }
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.READ_CALENDAR) == PackageManager.PERMISSION_GRANTED
-                && ActivityCompat.checkSelfPermission(this, Manifest.permission.WRITE_CALENDAR) == PackageManager.PERMISSION_GRANTED) {
-            showToast("You've allowed Permission");
+        else{
+            showToast("You've allowed read calendar and write calendar Permission");
         }
     }
 }
