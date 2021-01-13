@@ -107,27 +107,20 @@ public class StatusFragment extends Fragment {
             String info = "\nSomething wrong.";
 
             int mStatus = 0;
-
             if (intent.getAction().equals(Intent.ACTION_BATTERY_LOW)) {
-                int level = batteryStatus.getIntExtra(BatteryManager.EXTRA_LEVEL, -1);
-                int scale = batteryStatus.getIntExtra(BatteryManager.EXTRA_SCALE, -1);
-                batteryPercent = level * 100 / (float) scale;
-                info = "\nBattery low :" + batteryPercent;
+                info = "\nBattery low";
                 mStatus = 1;
-                Log.d(TAG, "Battery low");
+                Log.d(TAG, "Battery low"+batteryPercent);
             } else if (intent.getAction().equals(Intent.ACTION_BATTERY_OKAY)) {
-                int level = batteryStatus.getIntExtra(BatteryManager.EXTRA_LEVEL, -1);
-                int scale = batteryStatus.getIntExtra(BatteryManager.EXTRA_SCALE, -1);
-                batteryPercent = level * 100 / (float) scale;
-                info = "\nBattery ok :" + batteryPercent;
+                info = "\nBattery ok";
                 mStatus = 2;
                 Log.d(TAG, "Battery ok");
             } else if (intent.getAction().equals(Intent.ACTION_POWER_CONNECTED)) {
-                info = "\nPower connected :" + batteryPercent;
+                info = "\nPower connected";
                 mStatus = 3;
                 Log.d(TAG, "Power connected");
             } else if (intent.getAction().equals(Intent.ACTION_POWER_DISCONNECTED)) {
-                info = "\nPower disconnected :" + batteryPercent;
+                info = "\nPower disconnected";
                 mStatus = 4;
                 Log.d(TAG, "Power disconnected");
             }
