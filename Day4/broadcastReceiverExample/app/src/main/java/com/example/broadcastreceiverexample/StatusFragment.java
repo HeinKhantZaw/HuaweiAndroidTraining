@@ -24,6 +24,8 @@ import java.util.Objects;
 public class StatusFragment extends Fragment {
     TextView tvStatus;
     MyReceiver myReceiver = new MyReceiver();
+    Intent batteryStatus;
+    IntentFilter intentFilter;
     private static String TAG = "MyReceiver";
     float batteryPercent;
     // TODO: Rename parameter arguments, choose names that match
@@ -73,10 +75,10 @@ public class StatusFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_status, container, false);
         tvStatus = view.findViewById(R.id.tvStatus);
         //manual check
-        IntentFilter intentFilter = new IntentFilter(Intent.ACTION_BATTERY_CHANGED);
-        Intent batteryStatus = Objects.requireNonNull(getContext()).registerReceiver(null, intentFilter);
+        intentFilter = new IntentFilter(Intent.ACTION_BATTERY_CHANGED);
+        batteryStatus = Objects.requireNonNull(getContext()).registerReceiver(null, intentFilter);
         int batteryLvl = batteryStatus.getIntExtra(BatteryManager.EXTRA_STATUS, -1);
-        boolean isCharging = batteryLvl == BatteryManager.BATTERY_STATUS_CHARGING || batteryLvl == BatteryManager.BATTERY_STATUS_NOT_CHARGING;
+        boolean isCharging = batteryLvl == BatteryManager.BATTERY_STATUS_CHARGING || batteryLvl == BatteryManager.BATTERY_STATUS_FULL;
         int level = batteryStatus.getIntExtra(BatteryManager.EXTRA_LEVEL, -1);
         int scale = batteryStatus.getIntExtra(BatteryManager.EXTRA_SCALE, -1);
         batteryPercent = level * 100 / (float) scale;
@@ -105,11 +107,18 @@ public class StatusFragment extends Fragment {
             String info = "\nSomething wrong.";
 
             int mStatus = 0;
+
             if (intent.getAction().equals(Intent.ACTION_BATTERY_LOW)) {
+                int level = batteryStatus.getIntExtra(BatteryManager.EXTRA_LEVEL, -1);
+                int scale = batteryStatus.getIntExtra(BatteryManager.EXTRA_SCALE, -1);
+                batteryPercent = level * 100 / (float) scale;
                 info = "\nBattery low :" + batteryPercent;
                 mStatus = 1;
                 Log.d(TAG, "Battery low");
             } else if (intent.getAction().equals(Intent.ACTION_BATTERY_OKAY)) {
+                int level = batteryStatus.getIntExtra(BatteryManager.EXTRA_LEVEL, -1);
+                int scale = batteryStatus.getIntExtra(BatteryManager.EXTRA_SCALE, -1);
+                batteryPercent = level * 100 / (float) scale;
                 info = "\nBattery ok :" + batteryPercent;
                 mStatus = 2;
                 Log.d(TAG, "Battery ok");
