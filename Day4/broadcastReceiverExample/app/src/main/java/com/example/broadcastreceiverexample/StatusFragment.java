@@ -27,7 +27,6 @@ public class StatusFragment extends Fragment {
     Intent batteryStatus;
     IntentFilter intentFilter;
     private static String TAG = "MyReceiver";
-    float batteryPercent;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -81,7 +80,7 @@ public class StatusFragment extends Fragment {
         boolean isCharging = batteryLvl == BatteryManager.BATTERY_STATUS_CHARGING || batteryLvl == BatteryManager.BATTERY_STATUS_FULL;
         int level = batteryStatus.getIntExtra(BatteryManager.EXTRA_LEVEL, -1);
         int scale = batteryStatus.getIntExtra(BatteryManager.EXTRA_SCALE, -1);
-        batteryPercent = level * 100 / (float) scale;
+        float batteryPercent = level * 100 / (float) scale;
         if (isCharging) {
             tvStatus.setText("Status: Charging");
             int chargePlug = batteryStatus.getIntExtra(BatteryManager.EXTRA_PLUGGED, -1);
@@ -105,12 +104,11 @@ public class StatusFragment extends Fragment {
         public void onReceive(Context context, Intent intent) {
             Log.d(TAG, "received an intent");
             String info = "\nSomething wrong.";
-
             int mStatus = 0;
             if (intent.getAction().equals(Intent.ACTION_BATTERY_LOW)) {
                 info = "\nBattery low";
                 mStatus = 1;
-                Log.d(TAG, "Battery low"+batteryPercent);
+                Log.d(TAG, "Battery low");
             } else if (intent.getAction().equals(Intent.ACTION_BATTERY_OKAY)) {
                 info = "\nBattery ok";
                 mStatus = 2;
