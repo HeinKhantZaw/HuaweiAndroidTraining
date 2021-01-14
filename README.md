@@ -57,3 +57,12 @@ There's a README.md in every project. If you're interested, you can find more ab
 ### Day 5 
 - [Bitmap Example](https://github.com/HeinKhantZaw/HuaweiAndroidTraining/tree/main/Day5/bitmapExample)
 - [Paint Example](https://github.com/HeinKhantZaw/HuaweiAndroidTraining/tree/main/Day5/paintExample)
+
+### Day 6
+- [CRUD_Demo](https://github.com/HeinKhantZaw/HuaweiAndroidTraining/tree/main/Day6/CRUD_Demo)
+- [ContentProviderDemo](https://github.com/HeinKhantZaw/HuaweiAndroidTraining/tree/main/Day6/ContentProviderDemo)
+- [ContentProviderDemoWithLoaderFeature](https://github.com/HeinKhantZaw/HuaweiAndroidTraining/tree/main/Day6/ContentProviderDemoWithLoaderFeature)
+- [MyEvents](https://github.com/HeinKhantZaw/HuaweiAndroidTraining/tree/main/Day6/MyEvents)
+
+### Day 7 
+- [NewsAPI_RetrofitDemo](https://github.com/HeinKhantZaw/HuaweiAndroidTraining/tree/main/Day7/NewsAPI_RetrofitDemo)
