@@ -21,10 +21,8 @@ public class NotificationWorker extends Worker {
     @NonNull
     @Override
     public Result doWork() {
-        Data taskData = getInputData();
-
-        showNotification("workManager","Message has been sent");
-        Data outputData = new Data.Builder().putString(WORK_RESULT,"Jobs Finished").build();
+        showNotification("workManager", "Message has been sent");
+        Data outputData = new Data.Builder().putString(WORK_RESULT, "Jobs Finished").build();
         return Result.success(outputData);
     }
 
@@ -33,14 +31,14 @@ public class NotificationWorker extends Worker {
 
         String channelId = "task_channel";
         String channelName = "task_name";
-        if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.O){
-            NotificationChannel channel = new NotificationChannel(channelId,channelName,NotificationManager.IMPORTANCE_DEFAULT);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            NotificationChannel channel = new NotificationChannel(channelId, channelName, NotificationManager.IMPORTANCE_DEFAULT);
             notificationManager.createNotificationChannel(channel);
         }
-        NotificationCompat.Builder builder = new NotificationCompat.Builder(getApplicationContext(),channelId)
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(getApplicationContext(), channelId)
                 .setContentTitle(task)
                 .setContentText(description)
                 .setSmallIcon(R.mipmap.ic_launcher);
-        notificationManager.notify(1,builder.build());
+        notificationManager.notify(1, builder.build());
     }
 }
