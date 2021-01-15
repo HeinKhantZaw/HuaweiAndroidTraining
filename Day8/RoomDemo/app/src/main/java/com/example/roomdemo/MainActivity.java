@@ -2,7 +2,6 @@ package com.example.roomdemo;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 
 import androidx.annotation.NonNull;
@@ -54,14 +53,14 @@ public class MainActivity extends AppCompatActivity {
                         int position = viewHolder.getAdapterPosition();
                         List<PersonData> data = personAdapter.getData();
                         mDb.personDao().delete(data.get(position));
-                        retrieveTask();
+                        retrieveData();
                     }
                 });
             }
         }).attachToRecyclerView(recyclerView);
     }
 
-    private void retrieveTask() {
+    private void retrieveData() {
         AppExecutors.getInstance().diskIO().execute(new Runnable() {
             @Override
             public void run() {
@@ -79,6 +78,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        retrieveTask();
+        retrieveData();
     }
 }
