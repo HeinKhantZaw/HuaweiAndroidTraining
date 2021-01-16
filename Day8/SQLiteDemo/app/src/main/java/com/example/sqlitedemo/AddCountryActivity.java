@@ -10,7 +10,7 @@ import android.widget.EditText;
 
 public class AddCountryActivity extends Activity {
 
-    private Button addTodoBtn;
+    private Button addBtn;
     private EditText subjectEditText;
     private EditText descEditText;
 
@@ -31,8 +31,8 @@ public class AddCountryActivity extends Activity {
     private void init() {
         subjectEditText = findViewById(R.id.countryName_editText);
         descEditText = findViewById(R.id.currency_editText);
-        addTodoBtn = findViewById(R.id.add_record);
-        addTodoBtn.setOnClickListener(new OnClickListener() {
+        addBtn = findViewById(R.id.add_record);
+        addBtn.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
                 final String name = subjectEditText.getText().toString();

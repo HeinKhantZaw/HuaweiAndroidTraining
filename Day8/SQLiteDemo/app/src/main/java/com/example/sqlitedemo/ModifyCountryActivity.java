@@ -1,9 +1,5 @@
 package com.example.sqlitedemo;
 
-/**
- * Created by anupamchugh on 19/10/15.
- */
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
