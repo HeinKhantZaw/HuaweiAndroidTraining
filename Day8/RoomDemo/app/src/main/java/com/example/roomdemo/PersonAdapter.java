@@ -42,8 +42,8 @@ public class PersonAdapter extends RecyclerView.Adapter<PersonAdapter.ViewHolder
             public void onClick(View view) {
                 Intent intent = new Intent(mContext, EditActivity.class);
                 intent.putExtra("id", id);
-                intent.putExtra("name",name);
-                intent.putExtra("number",number);
+                intent.putExtra("name", name);
+                intent.putExtra("number", number);
                 mContext.startActivity(intent);
             }
         });
@@ -51,7 +51,7 @@ public class PersonAdapter extends RecyclerView.Adapter<PersonAdapter.ViewHolder
 
     @Override
     public int getItemCount() {
-        if(personDataList == null){
+        if (personDataList == null) {
             return 0;
         }
         return personDataList.size();

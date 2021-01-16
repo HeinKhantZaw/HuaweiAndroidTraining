@@ -11,6 +11,7 @@ public class AppExecutors {
     private AppExecutors(Executor diskIO) {
         this.diskIO = diskIO;
     }
+
     public static AppExecutors getInstance() {
         if (sInstance == null) {
             synchronized (LOCK) {

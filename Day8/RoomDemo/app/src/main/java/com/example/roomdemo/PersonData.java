@@ -15,7 +15,7 @@ public class PersonData {
     String number;
 
     @Ignore
-    public PersonData(String name, String number){
+    public PersonData(String name, String number) {
         this.name = name;
         this.number = number;
     }

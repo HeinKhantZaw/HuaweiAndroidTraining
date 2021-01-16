@@ -12,7 +12,6 @@ import androidx.appcompat.app.AppCompatActivity;
 public class EditActivity extends AppCompatActivity {
     EditText edtName, edtPhoneNumber;
     Button btnSave;
-    int mPersonId;
     Intent intent;
     private AppDatabase mDb;
 
@@ -53,7 +52,7 @@ public class EditActivity extends AppCompatActivity {
                 if (intent != null && !intent.hasExtra("id")) {
                     mDb.personDao().insertPerson(personData);
                 } else {
-                    personData.setId(intent.getIntExtra("id",0));
+                    personData.setId(intent.getIntExtra("id", 0));
                     mDb.personDao().updatePerson(personData);
                 }
                 finish();
