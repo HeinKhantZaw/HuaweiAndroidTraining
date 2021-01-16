@@ -21,7 +21,4 @@ public interface PersonDao {
 
     @Delete
     void delete(PersonData data);
-
-    @Query("SELECT * FROM Person WHERE ID = :id")
-    PersonData loadPersonDataByID(int id);
 }
