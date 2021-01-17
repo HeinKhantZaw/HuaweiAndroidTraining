@@ -66,3 +66,7 @@ There's a README.md in every project. If you're interested, you can find more ab
 
 ### Day 7 
 - [NewsAPI_RetrofitDemo](https://github.com/HeinKhantZaw/HuaweiAndroidTraining/tree/main/Day7/NewsAPI_RetrofitDemo)
+
+### Day 8
+- [SQLiteDemo](https://github.com/HeinKhantZaw/HuaweiAndroidTraining/tree/main/Day8/SQLiteDemo)
+- [RoomDemo](https://github.com/HeinKhantZaw/HuaweiAndroidTraining/tree/main/Day8/RoomDemo)
