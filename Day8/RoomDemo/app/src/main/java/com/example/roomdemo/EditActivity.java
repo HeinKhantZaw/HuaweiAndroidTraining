@@ -19,8 +19,7 @@ public class EditActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
+
         init();
         if (intent != null && intent.hasExtra("id")) {
             btnSave.setText("Update");
