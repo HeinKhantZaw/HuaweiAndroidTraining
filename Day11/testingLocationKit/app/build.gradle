@@ -39,7 +39,7 @@ dependencies {
 
     implementation 'com.huawei.hms:maps:4.0.1.302'
     implementation 'com.huawei.hms:location:5.1.0.300'
-    implementation 'com.huawei.hms:site:4.0.3.300'
+    implementation 'com.huawei.hms:site:5.1.0.300'
     implementation 'com.huawei.agconnect:agconnect-core:1.4.2.300'
 }
 apply plugin: 'com.huawei.agconnect'
