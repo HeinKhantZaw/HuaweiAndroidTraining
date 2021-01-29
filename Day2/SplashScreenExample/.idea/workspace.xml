@@ -11,15 +11,115 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd2fcdc4-279b-479a-a2f1-d8955c341729" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/androidTest/java/com/hkz/testingmapkit/ExampleInstrumentedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/assets/images/niuyouguo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/java/com/hkz/testingmapkit/BasicMapDemoActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/java/com/hkz/testingmapkit/CameraDemoActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/java/com/hkz/testingmapkit/CircleDemoActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/java/com/hkz/testingmapkit/ControlsDemoActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/java/com/hkz/testingmapkit/EventsDemoActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/java/com/hkz/testingmapkit/GestureDemoActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/java/com/hkz/testingmapkit/GroundOverlayDemoActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/java/com/hkz/testingmapkit/LiteModeDemoActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/java/com/hkz/testingmapkit/LocationSourceDemoActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/java/com/hkz/testingmapkit/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/java/com/hkz/testingmapkit/MapFragmentCodeDemoActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/java/com/hkz/testingmapkit/MapFragmentDemoActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/java/com/hkz/testingmapkit/MapFunctionsDemoActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/java/com/hkz/testingmapkit/MapViewCodeDemoActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/java/com/hkz/testingmapkit/MapViewDemoActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/java/com/hkz/testingmapkit/MarkerDemoActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/java/com/hkz/testingmapkit/MoreLanguageDemoActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/java/com/hkz/testingmapkit/PolygonDemoActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/java/com/hkz/testingmapkit/PolylineDemoActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/java/com/hkz/testingmapkit/RoutePlanningDemoActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/java/com/hkz/testingmapkit/StyleMapDemoActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/java/com/hkz/testingmapkit/SupportMapCodeDemoActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/java/com/hkz/testingmapkit/SupportMapDemoActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/java/com/hkz/testingmapkit/utils/CheckUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/java/com/hkz/testingmapkit/utils/MapUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/java/com/hkz/testingmapkit/utils/NetClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/java/com/hkz/testingmapkit/utils/NetworkRequestManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/drawable/badge_bj.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/drawable/badge_nj.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/drawable/badge_ph.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/drawable/badge_sh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/drawable/badge_tr.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/drawable/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/drawable/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/drawable/makalong.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/drawable/niuyouguo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/layout/acitivity_litemode_demo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/layout/acitivity_map_founctions_demo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/layout/acitvity_traffic_demo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/layout/activity_basic_demo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/layout/activity_camera_demo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/layout/activity_circle_demo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/layout/activity_controls_demo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/layout/activity_events_demo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/layout/activity_gestures_demo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/layout/activity_groudoverlay_demo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/layout/activity_locationsource_demo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/layout/activity_mapfragment_demo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/layout/activity_mapfragmentcode_demo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/layout/activity_mapview_demo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/layout/activity_mapviewcode_demo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/layout/activity_marker_demo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/layout/activity_more_language_demo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/layout/activity_polygon_demo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/layout/activity_polyline_demo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/layout/activity_route_planning_demo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/layout/activity_style_map_demo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/layout/activity_supportmapcode_demo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/layout/activity_supportmapfragment_demo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/layout/custom_info_contents.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/layout/custom_info_window.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/raw/mapstyle_grayscale_hms.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/raw/mapstyle_night_hms.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/raw/mapstyle_retro_hms.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/app/src/test/java/com/hkz/testingmapkit/ExampleUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day14/testingMapKit/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/splashscreenexample/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/splashscreenexample/MainActivity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="cb454d70" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -48,12 +148,12 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="android.sdk.path" value="D:/Android/AndroidSDK" />
+    <property name="android.sdk.path" value="$PROJECT_DIR$/../../../../Android/AndroidSDK" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
     <property name="show.migrate.to.gradle.popup" value="false" />
@@ -76,12 +176,13 @@
       </method>
     </configuration>
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
-      <module name="app" />
+      <module name="SplashScreenExample.app" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
       <option name="DEPLOY_AS_INSTANT" value="false" />
       <option name="ARTIFACT_NAME" value="" />
       <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
       <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="default_activity" />
@@ -117,11 +218,16 @@
       </Native>
       <Profilers>
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
         <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
         <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
       </Profilers>
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>

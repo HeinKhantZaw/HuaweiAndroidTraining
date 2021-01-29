@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hkz.testingmapkit">
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="22" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="22" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="com.hkz.testingmapkit.MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.hkz.testingmapkit.CircleDemoActivity"
+            android:label="CircleDemo" />
+        <activity
+            android:name="com.hkz.testingmapkit.ControlsDemoActivity"
+            android:label="ControlsDemo" />
+        <activity
+            android:name="com.hkz.testingmapkit.GestureDemoActivity"
+            android:label="GestureDemo" />
+        <activity
+            android:name="com.hkz.testingmapkit.GroundOverlayDemoActivity"
+            android:label="GroundOverlayDemo" />
+        <activity
+            android:name="com.hkz.testingmapkit.LiteModeDemoActivity"
+            android:label="LiteModeDemo" />
+        <activity
+            android:name="com.hkz.testingmapkit.MapFunctionsDemoActivity"
+            android:label="MapFunctions" />
+        <activity
+            android:name="com.hkz.testingmapkit.MoreLanguageDemoActivity"
+            android:label="MoreLanguageDemo" />
+        <activity
+            android:name="com.hkz.testingmapkit.PolygonDemoActivity"
+            android:label="PolygonDemo" />
+        <activity
+            android:name="com.hkz.testingmapkit.PolylineDemoActivity"
+            android:label="PolylineDemo" />
+        <activity
+            android:name="com.hkz.testingmapkit.LocationSourceDemoActivity"
+            android:label="LocationSourceDemo" />
+        <activity
+            android:name="com.hkz.testingmapkit.MarkerDemoActivity"
+            android:label="MarkerDemo" />
+        <activity
+            android:name="com.hkz.testingmapkit.CameraDemoActivity"
+            android:label="CameraDemo" />
+        <activity
+            android:name="com.hkz.testingmapkit.BasicMapDemoActivity"
+            android:label="BasicMapDemo" />
+        <activity
+            android:name="com.hkz.testingmapkit.MapFragmentDemoActivity"
+            android:label="MapFragmentDemo" />
+        <activity
+            android:name="com.hkz.testingmapkit.MapViewDemoActivity"
+            android:label="MapViewDemo" />
+        <activity
+            android:name="com.hkz.testingmapkit.SupportMapDemoActivity"
+            android:label="SupportMapDemo" />
+        <activity
+            android:name="com.hkz.testingmapkit.SupportMapCodeDemoActivity"
+            android:label="SupportMapCodeDemo" />
+        <activity
+            android:name="com.hkz.testingmapkit.MapViewCodeDemoActivity"
+            android:label="MapViewCodeDemo" />
+        <activity
+            android:name="com.hkz.testingmapkit.MapFragmentCodeDemoActivity"
+            android:label="MapFragmentCodeDemo" />
+        <activity
+            android:name="com.hkz.testingmapkit.StyleMapDemoActivity"
+            android:label="StyleMapDemo" />
+        <activity
+            android:name="com.hkz.testingmapkit.EventsDemoActivity"
+            android:label="EventsDemo" />
+        <activity
+            android:name="com.hkz.testingmapkit.RoutePlanningDemoActivity"
+            android:label="RoutePlanningDemo" />
+
+        <meta-data
+            android:name="com.huawei.hms.client.channel.androidMarket"
+            android:value="false" />
+
+        <meta-data
+            android:name="com.huawei.hms.client.appid"
+            android:value="appid=appid" />
+
+    </application>
+
+</manifest>
