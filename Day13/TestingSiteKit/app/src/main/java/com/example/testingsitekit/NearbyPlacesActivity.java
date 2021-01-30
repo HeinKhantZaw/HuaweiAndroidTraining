@@ -131,8 +131,8 @@ public class NearbyPlacesActivity extends AppCompatActivity implements View.OnCl
 
         @Override
         public void onSearchError(SearchStatus searchStatus) {
-            tvResult.setText("Error:" + searchStatus);
-            Toast.makeText(NearbyPlacesActivity.this, "Error:" + searchStatus, Toast.LENGTH_SHORT).show();
+            tvResult.setText("Error:" + searchStatus.errorCode +" "+searchStatus.errorMessage);
+            Toast.makeText(NearbyPlacesActivity.this, "Error found!" , Toast.LENGTH_SHORT).show();
         }
     };
 

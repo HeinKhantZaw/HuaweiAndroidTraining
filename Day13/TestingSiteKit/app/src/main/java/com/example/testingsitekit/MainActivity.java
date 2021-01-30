@@ -17,6 +17,7 @@
 package com.example.testingsitekit;
 
 import android.Manifest;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
@@ -44,6 +45,12 @@ import java.util.Arrays;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     SearchIntent searchIntent;
     TextView tvResults;
+
+    private static final String[] RUNTIME_PERMISSIONS_BEFORE_P = {Manifest.permission.ACCESS_COARSE_LOCATION,
+            Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.INTERNET};
+    private static final String[] RUNTIME_PERMISSIONS_AFTER_P = {Manifest.permission.ACCESS_COARSE_LOCATION,
+            Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.INTERNET, Manifest.permission.ACCESS_BACKGROUND_LOCATION};
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -129,29 +136,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    void checkPermission() {
+    private void checkPermission() {
         if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.P) {
-            if (ActivityCompat.checkSelfPermission(this,
-                    Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED
-                    && ActivityCompat.checkSelfPermission(this,
-                    Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-                String[] strings =
-                        {Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION};
-                ActivityCompat.requestPermissions(this, strings, 1);
+            if (!hasPermissions(this, RUNTIME_PERMISSIONS_BEFORE_P)) {
+                ActivityCompat.requestPermissions(this, RUNTIME_PERMISSIONS_BEFORE_P, 1);
             }
         } else {
-            if (ActivityCompat.checkSelfPermission(this,
-                    Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED
-                    && ActivityCompat.checkSelfPermission(this,
-                    Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED
-                    && ActivityCompat.checkSelfPermission(this,
-                    "android.permission.ACCESS_BACKGROUND_LOCATION") != PackageManager.PERMISSION_GRANTED) {
-                String[] strings = {android.Manifest.permission.ACCESS_FINE_LOCATION,
-                        android.Manifest.permission.ACCESS_COARSE_LOCATION,
-                        "android.permission.ACCESS_BACKGROUND_LOCATION"};
-                ActivityCompat.requestPermissions(this, strings, 2);
+            if (!hasPermissions(this, RUNTIME_PERMISSIONS_AFTER_P)) {
+                ActivityCompat.requestPermissions(this, RUNTIME_PERMISSIONS_AFTER_P, 1);
             }
         }
+    }
+
+    private static boolean hasPermissions(Context context, String... permissions) {
+        for (String permission : permissions) {
+            if (ActivityCompat.checkSelfPermission(context, permission) != PackageManager.PERMISSION_GRANTED) {
+                return false;
+            }
+        }
+        return true;
     }
 
     @Override
@@ -159,7 +162,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         if (requestCode == 1) {
             if (grantResults.length > 1 && grantResults[0] == PackageManager.PERMISSION_GRANTED
-                    && grantResults[1] == PackageManager.PERMISSION_GRANTED) {
+                    && grantResults[1] == PackageManager.PERMISSION_GRANTED && grantResults[2] == PackageManager.PERMISSION_GRANTED) {
                 Toast.makeText(this, "onRequestPermissionsResult: apply LOCATION PERMISSION successful", Toast.LENGTH_LONG).show();
             } else {
                 Toast.makeText(this, "onRequestPermissionsResult: apply LOCATION PERMISSION  failed", Toast.LENGTH_LONG).show();
@@ -167,9 +170,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
 
         if (requestCode == 2) {
-            if (grantResults.length > 2 && grantResults[2] == PackageManager.PERMISSION_GRANTED
+            if (grantResults.length > 2
                     && grantResults[0] == PackageManager.PERMISSION_GRANTED
-                    && grantResults[1] == PackageManager.PERMISSION_GRANTED) {
+                    && grantResults[1] == PackageManager.PERMISSION_GRANTED
+                    && grantResults[2] == PackageManager.PERMISSION_GRANTED
+                    && grantResults[3] == PackageManager.PERMISSION_GRANTED) {
                 Toast.makeText(this, "onRequestPermissionsResult: apply ACCESS_BACKGROUND_LOCATION successful", Toast.LENGTH_LONG).show();
             } else {
                 Toast.makeText(this, "onRequestPermissionsResult: apply ACCESS_BACKGROUND_LOCATION failed", Toast.LENGTH_LONG).show();
